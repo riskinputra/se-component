@@ -1,5 +1,5 @@
 {
-  "name": "@se/frontend",
+  "name": "@riskinputra/stick-component",
   "version": "0.0.5",
   "private": false,
   "license": "MIT",
@@ -72,5 +72,5 @@
       "git add"
     ]
   },
-  "gitHead": "0df3f6f632606a2dd5d3d36cf11c8b668e258811"
+  "gitHead": "4bbe2a5111382cd5d4ed05deb1d96117bf566e78"
 }
