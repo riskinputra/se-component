@@ -2,6 +2,7 @@
   "name": "@stick/frontend",
   "version": "0.0.2",
   "private": false,
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
@@ -70,5 +71,5 @@
       "git add"
     ]
   },
-  "gitHead": "573d3a199a623d064f25b2f2e594fcfadba70766"
+  "gitHead": "1f80f7a28f2ec4cef7188b90cccbc402c1a4aada"
 }
