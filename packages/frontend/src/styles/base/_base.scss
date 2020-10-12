@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+/*
+Version         : 1.0
+Created Date    : 3/9/2019
+Modified Date   : -
+Creator         : riskinputra
+Contributor     : -
+About           : -
+*/
+
+/**
+  *ALL VARIABLES MOVE TO GLOBAL-VARIABLE
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  &:hover, *:focus {outline: none}
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/**
+  * GENERAL HTML AND BODY STYLES
+  */
+html, body {
+  font-family             : $font-stack;
+  font-weight             : normal;
+  font-size               : $text-md;
+  line-height             : 150%;
+  overflow-x              : hidden;
+  color                   : $text-normal;
+  box-sizing              : border-box;
+
+  @media screen and (max-width: $screen-sm){
+    font-size : $text-sm;
+  }
+}
+
+// Typhography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+h1.is-reset,
+h2.is-reset,
+h3.is-reset,
+h4.is-reset,
+h5.is-reset,
+h6.is-reset {
+  margin: 0;
+  line-height: 1em;
+}
+
+h1 {
+  font-size: $text-huge;
+  line-height: 59px;
+}
+h2 {
+  font-size: $text-xxl;
+  line-height: 40px;
+}
+h3 {
+  font-size: $text-xl;
+  line-height: 30px;
+}
+h4 {
+  font-size: $text-lg;
+  line-height: 20px;
+}
+h5 {
+  font-size: $text-md;
+  line-height: 18px;
+}
+h6 {
+  font-size: $text-sm;
+  line-height: 16px;
+}
+
+
+// Text Style
+.text {
+  // Position
+  &-center { text-align: center; }
+  &-left { text-align: left; }
+  &-right { text-align: right; }
+
+  // Transform
+  &-uppercase { text-transform: uppercase; }
+  &-capitalize { text-transform: capitalize; }
+  &-lowercase { text-transform: lowercase; }
+  &-initial { text-transform: initial; }
+  &-inherit { text-transform: inherit; }
+
+  // Size
+  &-subtle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+  }
+  &-lg {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 154%;
+  }
+  &-bold {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &-normal {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  &-sm-bold {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  &-sm {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.shadow-none {
+  box-shadow: none !important;
+}
+
+.w-25 {
+  width: 25% !important;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.w-75 {
+  width: 75% !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.w-auto {
+  width: auto !important;
+}
+
+.h-25 {
+  height: 25% !important;
+}
+
+.h-50 {
+  height: 50% !important;
+}
+
+.h-75 {
+  height: 75% !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.h-auto {
+  height: auto !important;
+}
