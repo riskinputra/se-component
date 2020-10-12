@@ -1,0 +1,104 @@
+.se-btn {
+  padding: $gutter-md $gutter-xl;
+  font-weight: bold;
+  font-size: $text-md;
+  line-height: 20px;
+  outline: none;
+  display: inline-block;
+  display: inline-flex;
+  text-decoration: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+
+  @include box-shadow(inset -1px -1px 4px rgba(0, 0, 0, 0.12), inset 1px 1px 4px rgba(255, 255, 255, 0.42)); 
+  @include border-radius(8px);
+  @include transition(cubic-bezier(0.11, 0.65, 0.73, 0.66), 0.2s);
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    @include box-shadow(0 0 0 3px rgba(33, 33, 33, 0.15))
+  }
+
+  &--primary {
+    background-color: $purple;
+    color: $white;
+    &:hover {
+      background-color: darken($color: $purple, $amount: 1);
+    }
+    &:focus {
+      background-color: darken($color: $purple, $amount: 2);
+      @include box-shadow(0 0 0 3px rgba($color: $purple, $alpha: .15));
+    }
+  }
+  &--secondary {
+    background-color: $orange;
+    color: $white;
+    &:hover {
+      background-color: darken($color: $orange, $amount: 1);
+    }
+    &:focus {
+      background-color: darken($color: $orange, $amount: 2);
+      @include box-shadow(0 0 0 3px rgba($color: $orange, $alpha: .15));
+    }
+  }
+  &--red {
+    background-color: $red;
+    color: $white;
+    &:hover {
+      background-color: darken($color: $red, $amount: 1);
+    }
+    &:focus {
+      background-color: darken($color: $red, $amount: 2);
+      @include box-shadow(0 0 0 3px rgba($color: $red, $alpha: .15));
+    }
+  }
+  &--dark {
+    background-color: $dark;
+    color: $white;
+    &:hover {
+      background-color: darken($color: $dark, $amount: 1);
+    }
+    &:focus {
+      background-color: darken($color: $dark, $amount: 2);
+      @include box-shadow(0 0 0 3px rgba($color: $dark, $alpha: .15));
+    }
+  }
+  &--normal {
+    background-color: $text-normal;
+    color: $white;
+    &:hover {
+      background-color: darken($color: $text-normal, $amount: 1);
+    }
+    &:focus {
+      background-color: darken($color: $text-normal, $amount: 2);
+      @include box-shadow(0 0 0 3px rgba($color: $text-normal, $alpha: .15));
+    }
+  }
+
+  &--accent {
+    background-color: $accent;
+    color: $text-normal;
+    &:hover {
+      background-color: darken($color: $accent, $amount: 1);
+    }
+    &:focus {
+      background-color: darken($color: $accent, $amount: 2);
+      @include box-shadow(0 0 0 3px rgba($color: $accent, $alpha: .15));
+    }
+  }
+
+  &--small {
+    font-size: $text-sm;
+    padding: $gutter-sm $gutter-md;
+  }
+  &--medium {
+    font-size: $text-md;
+    padding: $gutter-md $gutter-xl;
+  }
+  &--large {
+    font-size: $text-xl;
+    padding: $gutter-xl $gutter-xxl;
+  }
+}
