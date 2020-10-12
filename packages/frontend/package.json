@@ -1,8 +1,7 @@
 {
   "name": "@stick/frontend",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": false,
-  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
@@ -70,5 +69,6 @@
       "vue-cli-service lint",
       "git add"
     ]
-  }
+  },
+  "gitHead": "573d3a199a623d064f25b2f2e594fcfadba70766"
 }
