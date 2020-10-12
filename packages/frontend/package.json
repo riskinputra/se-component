@@ -6,6 +6,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "author": "riskinputra",
   "main": "./dist/stickcomponent.common.js",
   "files": [
     "dist/*",
@@ -71,5 +72,5 @@
       "git add"
     ]
   },
-  "gitHead": "eea42cfe31c1852221d4ba2cf0901d28c12ec6ad"
+  "gitHead": "0df3f6f632606a2dd5d3d36cf11c8b668e258811"
 }
